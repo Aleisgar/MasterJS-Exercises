@@ -1,4 +1,9 @@
 function isPersonOldEnoughToDrinkAndDrive(person) {
-  // the person object contains an "age" property inside
-  // your code here
+
+   return false
 }
+var person = {
+  age: 23
+};
+
+console.log(isPersonOldEnoughToDrinkAndDrive(person))

@@ -18,9 +18,20 @@ var currentInventory = [
 ];
 
 function renderInventory(inventory) {
-    // your code here
-    // hint: before you just dive into coding...
-    // it's a good idea to sketch out a skeleton like you've been seeing earlier in this module...
-    
+
+arr_return = [];
+
+    for (let i = 0; i < inventory.length; i++) {//recorrer los elementos del inventario
+        for (let x = 0 ; x < inventory[i].shoes.length; x++) {//recorrer el array dentro de shoes
+            arr_return.push(//Le hago el push con corchetes para que se introduzca todo como un array
+                [inventory[i].name,
+                inventory[i].shoes[x].name, 
+                inventory[i].shoes[x].price
+                ]
+            )
+        } 
+    }
+    return arr_return;
 }
+   
 console.log(renderInventory(currentInventory))

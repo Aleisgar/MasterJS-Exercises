@@ -1,3 +1,7 @@
 function getAllLetters(str) {
-    // your code here
+  let result = str.split("")
+    return result
 }
+console.log(getAllLetters('Radagast'));
+
+
