@@ -1,12 +1,10 @@
 function getAverageOfElementsAtProperty(obj, key) {
     let sum = 0
-
-
     for (let num of obj[key]) {
         console.log(num);
         sum += num
     }
-    if (sum !== 0) return sum / obj[key].length
+    if (sum !== 0 && obj[key].length !== 0 && obj[key]) return sum / obj[key].length
     else return 0
 
 }

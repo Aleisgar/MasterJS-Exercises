@@ -1,5 +1,6 @@
 function filterEvenLengthWords(words) {
-    // your code here
+    let evenWords = words.filter(item => item.length % 2 == 0)
+    return evenWords
 }
 
 var output = filterEvenLengthWords(['word', 'words', 'word', 'words']);
