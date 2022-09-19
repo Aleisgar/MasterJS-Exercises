@@ -1,5 +1,6 @@
 function squareElements(arr) {
-  // your code here
+    let newArr = arr.map(element => element * element)
+    return newArr
 }
 
 var output = squareElements([1, 2, 3]);
